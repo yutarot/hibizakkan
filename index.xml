@@ -7,10 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja_JP.UTF-8</language>
     <copyright>&amp;copy; 2018 yutarot</copyright>
-    <lastBuildDate>Wed, 25 Jul 2018 00:58:45 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Jul 2018 03:22:57 +0900</lastBuildDate>
     
 	<atom:link href="https://yutarot.github.io/hibizakkan/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>雑感20180727</title>
+      <link>https://yutarot.github.io/hibizakkan/posts/20180727/</link>
+      <pubDate>Sat, 28 Jul 2018 03:22:57 +0900</pubDate>
+      
+      <guid>https://yutarot.github.io/hibizakkan/posts/20180727/</guid>
+      <description>&lt;h1 id=&#34;マストドンのバージョンを更新&#34;&gt;マストドンのバージョンを更新&lt;/h1&gt;
+
+&lt;p&gt;自分専用おひとり鯖の&lt;a href=&#34;https://mstdn.binfish.jp&#34;&gt;マストドン&lt;/a&gt;のバージョンを2.4.3に更新した。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>About</title>
