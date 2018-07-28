@@ -28,7 +28,7 @@ copyright = "&copy; 2018 yutarot"
 #  # Disqus shortname
 #  disqus = ""
   # Google Analytics API key.
-  #ga_api_key = "Your Google Analytics tracking id"
+  ga_api_key = "UA-82631162-4"
   author = "yutarot"
   authorwebsite = "https://blog.binfish.jp"
   avatar = "https://s.gravatar.com/avatar/b8a2df8309205145a88664926e17ac43?s=200"
