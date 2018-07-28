@@ -11,7 +11,7 @@ copyright = "&copy; 2018 yutarot"
   # footer
 #  twitter = "Your Twitter username"
 #  facebook = "Your Facebook username"
-#  instagram = "Your Instagram username"
+  instagram = "yutarot_binfish"
 #  googleplus = "Your Google+ account URL" # https://plus.google.com/u/0/xxxxxx
   github = "yutarot"
 #  gitlab = "Your GitLab username"
@@ -35,42 +35,25 @@ copyright = "&copy; 2018 yutarot"
   contact = "mailto:takenoco88@gmail.com"
   bio = "燃料びーるのうぇっぶえんじにゃー"
   # Short subtitle/tagline. This is displayed in the header.
-  subtitle = "とりあえずやってみる。とりあえずやってみた。そんなかんじで"
+  subtitle = "a.k.a ポエム"
   # Logo image. This is displayed ogp image.
   #logo = "/path/to/logo"
   #favicon = "/path/to/favicon"
 
 [[menu.main]]
-    name = "Blog"
-    url = "https://blog.binfish.jp"
+    name = "About"
+    url = "/about"
     weight = 1
 
 [[menu.main]]
-    name = "About"
-    url = "/about"
+    name = "Blog"
+    url = "https://blog.binfish.jp"
     weight = 2
-
-#[[menu.main]]
-#    identifier = "theme"
-#    name = "/theme"
-#    weight = 3
-#
-#[[menu.main]]
-#    parent = "theme"
-#    name = "creating-a-new-theme"
-#    url = "/posts/creating-a-new-theme"
-#    weight = 1
-#
-#[[menu.main]]
-#    parent = "theme"
-#    name = "migrate-from-jekyll"
-#    url = "/posts/migrate-from-jekyll"
-#    weight = 2
 
 [[menu.main]]
     name = "Tags"
     url = "/tags"
-    weight = 4
+    weight = 3
 
 [related]
   # Only include matches with rank >= threshold. This is a normalized rank between 0 and 100.
