@@ -7,10 +7,43 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja_JP.UTF-8</language>
     <copyright>&amp;copy; 2018 yutarot</copyright>
-    <lastBuildDate>Sat, 28 Jul 2018 03:22:57 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 01 Aug 2018 01:43:04 +0900</lastBuildDate>
     
 	<atom:link href="https://yutarot.github.io/hibizakkan/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20180801</title>
+      <link>https://yutarot.github.io/hibizakkan/posts/20180801/</link>
+      <pubDate>Wed, 01 Aug 2018 01:43:04 +0900</pubDate>
+      
+      <guid>https://yutarot.github.io/hibizakkan/posts/20180801/</guid>
+      <description>喫緊の課題 お仕事の都合で目下、以下のテクノロジーの習得が必要となっている.
+ Play framework (Java) GraphQL (Backend &amp;amp; Frontend) React + Redux Express server  いままで内製のふるーいフレームワークとかでぬるぬるやっていたので、マイグレーションに際していろんなオープンで新し目のものが一気に来てファーとなっている.
+まぁむしろ仕事でこうやって新しいもの、しかもオープンなテクノロジーを扱う機会を与えてもらえるのはありがたいことなので一生懸命がんばります. はい.
+優先度はとりあえず上に書いた順かな.
+バックエンドは基本Javaなお仕事なので(Rubyもたまにみる)、JavaならSpring一択でしょと思ってたらまさかのPlay&amp;hellip;
+Googleトレンド(Play Framework/Spring Framework/Apache Struts)
+職場の外国人エンジニアにPlayって世界で使われてるの？って聞いたら「まぁまぁポピュラーだよ！」って言ってたけど、この結果みるとほんとかなぁ、圧倒的にSpringジャン…ってなる.
+まぁもう決まったことなのでつべこべ言わずにやりますが.
+ほんでPlayのお勉強にかこつけて最近IntelliJ IDEA入れてみました.
+Eclipseでも別段困ってはなかったけど、みんな良い良い言うので.
+そのうちIntelliJ+Playでブログ書こう.
+.
+.
+.
+brew + cask + mas + bundle でQOL向上 先日別ブログにも書いたけど、Homebrew/Cask/mas/brew-bundleを導入してからというもの、QOL=クオリティ・オブ・ライフの向上を実感している.
+ Brewfileにアウトプットしてgit管理することでインストール/アンインストールがトラックできる 大抵のアプリはbrew searchで見つかる. (これまで自分の使いたかったものは全て見つかった) brew searchすればアプリのサイトからダウンロードしたりインストールしたりする手間が省ける  このあたりが素晴らしい. なによりCLIで全てのアプリを一元管理できるのが良い.
+Macユーザーのエンジニアならどうせbrewはなにかしらで使っているだろうし、どうせならGUIアプリも全部brewで管理したいというのは素直な発想だと思う.
+まだ使っていない方がいたらぜひお試しあれ.
+.
+.
+.
+7月終了 &amp;amp; 8月突入 今年も7/12=0.583333333≒約59%弱が消化されました.
+8月は公私ともに節目というか、上記の新プロジェクトとかいろいろ始動するタイミングなので、気合入れてがんばりたいお気持ちです.
+とかいいつつ、つい最近まで風邪ひいてダウンしたりしてましたが..(エアコン辛い)
+みなさんも夏風邪、夏バテにお気をつけて. 今月も乗り切っていきまっしょい.</description>
+    </item>
     
     <item>
       <title>雑感20180727</title>
