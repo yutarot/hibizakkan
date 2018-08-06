@@ -7,10 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja_JP.UTF-8</language>
     <copyright>&amp;copy; 2018 yutarot</copyright>
-    <lastBuildDate>Wed, 01 Aug 2018 01:43:04 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 07 Aug 2018 02:00:12 +0900</lastBuildDate>
     
 	<atom:link href="https://yutarot.github.io/hibizakkan/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>雑感20180807</title>
+      <link>https://yutarot.github.io/hibizakkan/posts/20180807/</link>
+      <pubDate>Tue, 07 Aug 2018 02:00:12 +0900</pubDate>
+      
+      <guid>https://yutarot.github.io/hibizakkan/posts/20180807/</guid>
+      <description>&lt;h1 id=&#34;windows-subsystem-for-linuxでエンジニアは幸せになれるか&#34;&gt;Windows Subsystem for Linuxでエンジニアは幸せになれるか？&lt;/h1&gt;
+
+&lt;p&gt;職場では長らくWindows7を使い続けていたのだが, 本日(正確にはもう昨日. ねむい)ひょんなことからWindows10のマシンが手元に舞い込んできまして, ちまちま移行を進めています.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>雑感20180801</title>
