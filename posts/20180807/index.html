@@ -84,7 +84,7 @@
 
 <p>PackageManagement自体の詳しい説明は上のリンクやこちらのもう少し古い<a href="https://blogs.msdn.microsoft.com/mvpawardprogram/2014/10/06/package-management-for-powershell-modules-with-powershellget/">公式ブログ記事</a>を参照してほしいのだけど, 要はこれまでにもあった<a href="https://chocolatey.org/">Chocolatey</a>や<a href="https://www.nuget.org/">NuGet</a>といったパッケージ管理ツールをPackageProvider(パッケージプロバイダ)として, いわばサブモジュールとして透過的に扱えるようにしたラッパーコマンドのようだ.</p>
 
-<p>具滝的には以下のようなPackageProviderを利用することができる.</p>
+<p>具体的には以下のようなPackageProviderを利用することができる.</p>
 
 <pre><code class="language-powershell">PS C:\WINDOWS\system32&gt; Get-PackageProvider -ListAvailable
 
