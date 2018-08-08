@@ -4,6 +4,7 @@ title = "日々雑感"
 theme = "pickles"
 # Copyright notice. This is displayer in the footer.
 copyright = "&copy; 2018 yutarot"
+enableGitInfo = true
 
 [params]
   paginate = 10
