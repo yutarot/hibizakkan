@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   
-  <title>雑感20180807</title>
-  <meta property="og:title" content="雑感20180807" />
-  <meta name="twitter:title" content="雑感20180807" />
+  <title>雑感20180727</title>
+  <meta property="og:title" content="雑感20180727" />
+  <meta name="twitter:title" content="雑感20180727" />
   
 
   
@@ -17,7 +17,7 @@
 
   <meta name="author" content="yutarot"/>
   <meta property="og:site_name" content="日々雑感" />
-  <meta property="og:url" content="https://yutarot.me/posts/20180807/" />
+  <meta property="og:url" content="https://yutarot.me/posts/2018/0727/" />
 
   
   <meta name="twitter:card" content="summary" />
@@ -54,12 +54,12 @@
 
 <article class="p-article">
   <header>
-    <h1>雑感20180807</h1>
+    <h1>雑感20180727</h1>
     <div>
       <div class="c-time">
         Posted on
-        <time datetime="2018-08-07T02:00:12&#43;09:00">
-          Aug 7, 2018
+        <time datetime="2018-07-28T03:22:57&#43;09:00">
+          Jul 28, 2018
         </time>
       </div>
       
@@ -67,61 +67,61 @@
   </header>
   
   <section id="js-article" class="p-article__body">
-    <h1 id="windows-subsystem-for-linuxでエンジニアは幸せになれるか">Windows Subsystem for Linuxでエンジニアは幸せになれるか？</h1>
+    <h1 id="マストドンのバージョンを更新">マストドンのバージョンを更新</h1>
 
-<p>職場では長らくWindows7を使い続けていたのだが, 本日(正確にはもう昨日. ねむい)ひょんなことからWindows10のマシンが手元に舞い込んできまして, ちまちま移行を進めています.</p>
+<p>自分専用おひとり鯖の<a href="https://mstdn.binfish.jp">マストドン</a>のバージョンを2.4.3に更新した。</p>
 
 <p></p>
 
-<p>で, せっかくWindows10になったことだし, パッケージ管理とかツールとか諸々, これを機にアップデートしてナウでイケイケ(死語/dead word)な感じにしようと思いまして.</p>
+<p>v2.4.0 =&gt; v2.4.3 の更新だったけれど、最初DBのマイグレーションタスクを叩いてエラー。</p>
 
-<p>ひとまずパッケージ管理から, プライベートで愛用しているMacではbrewによるパッケージ管理が<a href="https://blog.binfish.jp/diary/oreno-brewfile/">完成されている</a>し, Windowsでもさすがにこの2018年の今日日, CLIから全部管理できるような素敵なものがあるだろうと期待しながら調べていくと, どうも<a href="https://blogs.technet.microsoft.com/packagemanagement/2015/04/28/introducing-packagemanagement-in-windows-10/">PackageManagement</a>ってのがいいらしい.
-&hellip;この名前を見ただけで寒気がするのは私だけか？</p>
+<p>調べてみるとマストドン本体のリポジトリにあった下記issueと全く同じ状況だった。</p>
 
-<p>まぁね, 名前なんてどうでもいいのです, まともにつかえさえすれば.</p>
+<p><a href="https://github.com/tootsuite/mastodon/issues/8007">Relation &ldquo;custom_filters&rdquo; does not exist #8007</a></p>
 
-<p>それでPackageManagement. Windows組み込みでコマンドプロンプトでもPowerShellでも使えるらしい.</p>
+<p>コメントに書き込まれている通り、v2.4.0 =&gt; v2.4.1 =&gt; v2.4.3 と順を追って更新することで正常にアプデできた。</p>
 
-<p>PackageManagement自体の詳しい説明は上のリンクやこちらのもう少し古い<a href="https://blogs.msdn.microsoft.com/mvpawardprogram/2014/10/06/package-management-for-powershell-modules-with-powershellget/">公式ブログ記事</a>を参照してほしいのだけど, 要はこれまでにもあった<a href="https://chocolatey.org/">Chocolatey</a>や<a href="https://www.nuget.org/">NuGet</a>といったパッケージ管理ツールをPackageProvider(パッケージプロバイダ)として, いわばサブモジュールとして透過的に扱えるようにしたラッパーコマンドのようだ.</p>
+<p>マイグレーション対象のテーブルにv2.4.1で作成されるテーブルがあったということらしい。</p>
 
-<p>具体的には以下のようなPackageProviderを利用することができる.</p>
+<p>理由が分かればなるほどという感じだが、毎度溜まったアプデをひとつひとつ適用していくのはめんどくさい。。</p>
 
-<pre><code class="language-powershell">PS C:\WINDOWS\system32&gt; Get-PackageProvider -ListAvailable
+<p>弊鯖はアプリモジュールとDBでインスタンスを分けているため2台のサーバで構成されているのだけど、バージョンアップの際にはそれぞれ手動でバックアップを取りながらやっているので順調にいっても30分くらい掛かってしまう。</p>
 
-Name                     Version          DynamicOptions
-----                     -------          --------------
-Chocolatey               2.8.5.130        SkipDependencies, ContinueOnFailure, ExcludeVersion, ForceX86, PackageSaveMode, FilterOnTag, Contains, AllowPrereleaseVersions, ConfigFile, SkipVa...
-msi                      3.0.0.0          AdditionalArguments
-msu                      3.0.0.0
-NuGet                    2.8.5.208        Destination, ExcludeVersion, Scope, SkipDependencies, Headers, FilterOnTag, Contains, AllowPrereleaseVersions, ConfigFile, SkipValidate
-PowerShellGet            1.0.0.1          PackageManagementProvider, Type, Scope, AllowClobber, SkipPublisherCheck, InstallUpdate, NoPathUpdate, Filter, Tag, Includes, DscResource, RoleCap...
-Programs                 3.0.0.0          IncludeWindowsInstaller, IncludeSystemComponent
-</code></pre>
+<p>(バックアップはサーバ全体のスナップショットを取る方式)</p>
 
-<p>いろんなパッケージ管理コマンドがあって, それぞれ得意な守備範囲があったりして使い分けてたものをまとめて扱えるようにする, いいじゃないですか.</p>
+<p>鯖立てた当初こそ本体のバージョンアップリリースに我先にと追随してアップデートしていたけど、最近はめっきり頻度が下がってしまい毎度手順を思い出しながらやっている…</p>
 
-<p>これでようやっとWindowsでも幸せになれるのだな, と思ったのも束の間. このPackageManagement, <a href="https://qiita.com/succi0303/items/205ed51c2d604bdf3cf1#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85">install失敗してるのにインストール済みとして扱</a>ったり<a href="https://qiita.com/kikuchi_kentaro/items/77793e4a21db6ffdb7cd#%E8%AA%B2%E9%A1%8C%E7%82%B9">往々にしてアンインストールに失敗する</a>というではないですか. ｸｿがぁ.（#^ω^）</p>
+<p>もう少し効率化してアグレッシブに更新していきたい。
+(それはそれでまだ誰も踏んでいない新しいトラップを踏む可能性もありそうだけどそれはそれ)</p>
 
-<p>でね, 私思ったんですよ. Windows10で<a href="https://github.com/Microsoft/WSL">Windows Subsystem for Linux(通称WSL)</a>ってやつあるじゃないですか. Windowsシステム上でUbuntuとか使えるようにするやつ.</p>
+<p>.</p>
 
-<p>旧<a href="https://blogs.windows.com/buildingapps/2016/03/30/run-bash-on-ubuntu-on-windows/">Bash on Ubuntu on Windows</a>として発表された2016年当時, 試した人からまだまだ使いもんになんないみたいな話を聞いてましたけど, あれから2年, そろそろ使えるものになっててもいいんでないか？ということでさっそく試しています.</p>
+<p>.</p>
 
-<p>で, まだほんのちょびっと触ってみただけですけど, なんとなくいい感じです.(小並感)</p>
+<p>.</p>
 
-<p>設定手順は<a href="https://qiita.com/yoshikingt/items/ab86411e6031459db805">こちらの記事</a>を参考にさせてもらいました.
-以前Bash on Ubuntu on Windowsの頃などに一度環境を構築したことのある方はそちらの<a href="https://qiita.com/Aruneko/items/c79810b0b015bebf30bb#%E5%8F%A4%E3%81%84wsl%E7%92%B0%E5%A2%83%E3%81%AE%E5%89%8A%E9%99%A4">古いWSL環境を一度削除</a>してから入れなおしたほうがいいみたいです.</p>
+<h1 id="またひとつ歳をとった">またひとつ歳をとった</h1>
 
-<p>とりあえず手順にそってUbuntu 18.04を入れて、そこに<code>apt</code>で<code>hugo</code>を入れてこの記事を書くところまで, うまくいきました.</p>
+<p>先日またひとつ歳を取りました。</p>
 
-<p>そうなにもかもうまくはいかないだろうけど, やりたいことは大体このUbuntuでできちゃうかも&hellip;?</p>
+<p>職場でもSNSでも誕生日を秘匿しているので、基本的には身内からだけ祝福される慎ましい誕生日でした。</p>
 
-<p>とりあえず次はこのUbuntu上でDocker環境を構築してみようと思います.　記事はまた後日にでも.</p>
+<p>今年はいろんな意味でひとつ区切りになりそうな年で、仕事もプライベートもがんばらないとな、と改めて気を引き締めました。</p>
 
-<p>もう全部このUbuntu上でやりたいな. # 最初からLinux使え</p>
+<p>人間的にもエンジニアとして技術的にも本当にまだまだ未熟だけど、最近つくづく感じるのは自分が&rdquo;そうありたい&rdquo; &ldquo;そうなりたい&rdquo;と強く意識して体現・実行していかないと、人間堕落していくものなんだなということ。</p>
 
-<p>深夜テンションでいろいろｱﾚな記事になってしまった&hellip;</p>
+<p>小さなことでもコツコツと。
+次の1年も地道に積み重ねていきたいなと思います。</p>
 
-<p>おわり！</p>
+<p>これからもどんどんやりたいことやってくぞー。</p>
+
+<p>今年こそなにか資格を取るぞー。</p>
+
+<p>&hellip;</p>
+
+<p>[壁]ω･*)つ<a href="https://www.amazon.co.jp/gp/registry/wishlist/3C1MWGD3YMV6V/ref=cm_wl_huc_view">干芋</a></p>
+
+<p>[壁]|彡ｻｯ</p>
   </section>
   <footer>
     
@@ -129,11 +129,12 @@ Programs                 3.0.0.0          IncludeWindowsInstaller, IncludeSystem
       <div class="c-pagination__ctrl">
         <div class="c-pagination__newer">
           
+          <a href="https://yutarot.me/posts/2018/0801/">Newer</a>
           
         </div>
         <div class="c-pagination__older">
           
-          <a href="https://yutarot.me/posts/20180801/">Older</a>
+          <a href="https://yutarot.me/about/">Older</a>
           
         </div>
       </div>

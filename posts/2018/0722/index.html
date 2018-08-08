@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   
-  <title>雑感20180727</title>
-  <meta property="og:title" content="雑感20180727" />
-  <meta name="twitter:title" content="雑感20180727" />
+  <title>Hello Hugo!</title>
+  <meta property="og:title" content="Hello Hugo!" />
+  <meta name="twitter:title" content="Hello Hugo!" />
   
 
   
@@ -17,7 +17,7 @@
 
   <meta name="author" content="yutarot"/>
   <meta property="og:site_name" content="日々雑感" />
-  <meta property="og:url" content="https://yutarot.me/posts/20180727/" />
+  <meta property="og:url" content="https://yutarot.me/posts/2018/0722/" />
 
   
   <meta name="twitter:card" content="summary" />
@@ -54,12 +54,12 @@
 
 <article class="p-article">
   <header>
-    <h1>雑感20180727</h1>
+    <h1>Hello Hugo!</h1>
     <div>
       <div class="c-time">
         Posted on
-        <time datetime="2018-07-28T03:22:57&#43;09:00">
-          Jul 28, 2018
+        <time datetime="2018-07-22T23:28:11&#43;09:00">
+          Jul 22, 2018
         </time>
       </div>
       
@@ -67,61 +67,24 @@
   </header>
   
   <section id="js-article" class="p-article__body">
-    <h1 id="マストドンのバージョンを更新">マストドンのバージョンを更新</h1>
+    <h2 id="hugo触ってみるの巻">Hugo触ってみるの巻.</h2>
 
-<p>自分専用おひとり鯖の<a href="https://mstdn.binfish.jp">マストドン</a>のバージョンを2.4.3に更新した。</p>
+<p>すでに<a href="https://blog.binfish.jp">WordPressのブログ</a>があるけど、静的サイトジェネレータってやつもやってみたくなって、これ。</p>
 
 <p></p>
 
-<p>v2.4.0 =&gt; v2.4.3 の更新だったけれど、最初DBのマイグレーションタスクを叩いてエラー。</p>
+<p>ここではこんなことをやりたいな：</p>
 
-<p>調べてみるとマストドン本体のリポジトリにあった下記issueと全く同じ状況だった。</p>
+<ul>
+<li>Hugo使ってみるぞい</li>
+<li>静的サイトジェネレータの勘所を知りたいぞい</li>
+<li>Markdownおぼえるぞい</li>
+<li>内容は日々雑感メインで</li>
+</ul>
 
-<p><a href="https://github.com/tootsuite/mastodon/issues/8007">Relation &ldquo;custom_filters&rdquo; does not exist #8007</a></p>
+<p>あわよくばGo触るとこまでやってみたい。</p>
 
-<p>コメントに書き込まれている通り、v2.4.0 =&gt; v2.4.1 =&gt; v2.4.3 と順を追って更新することで正常にアプデできた。</p>
-
-<p>マイグレーション対象のテーブルにv2.4.1で作成されるテーブルがあったということらしい。</p>
-
-<p>理由が分かればなるほどという感じだが、毎度溜まったアプデをひとつひとつ適用していくのはめんどくさい。。</p>
-
-<p>弊鯖はアプリモジュールとDBでインスタンスを分けているため2台のサーバで構成されているのだけど、バージョンアップの際にはそれぞれ手動でバックアップを取りながらやっているので順調にいっても30分くらい掛かってしまう。</p>
-
-<p>(バックアップはサーバ全体のスナップショットを取る方式)</p>
-
-<p>鯖立てた当初こそ本体のバージョンアップリリースに我先にと追随してアップデートしていたけど、最近はめっきり頻度が下がってしまい毎度手順を思い出しながらやっている…</p>
-
-<p>もう少し効率化してアグレッシブに更新していきたい。
-(それはそれでまだ誰も踏んでいない新しいトラップを踏む可能性もありそうだけどそれはそれ)</p>
-
-<p>.</p>
-
-<p>.</p>
-
-<p>.</p>
-
-<h1 id="またひとつ歳をとった">またひとつ歳をとった</h1>
-
-<p>先日またひとつ歳を取りました。</p>
-
-<p>職場でもSNSでも誕生日を秘匿しているので、基本的には身内からだけ祝福される慎ましい誕生日でした。</p>
-
-<p>今年はいろんな意味でひとつ区切りになりそうな年で、仕事もプライベートもがんばらないとな、と改めて気を引き締めました。</p>
-
-<p>人間的にもエンジニアとして技術的にも本当にまだまだ未熟だけど、最近つくづく感じるのは自分が&rdquo;そうありたい&rdquo; &ldquo;そうなりたい&rdquo;と強く意識して体現・実行していかないと、人間堕落していくものなんだなということ。</p>
-
-<p>小さなことでもコツコツと。
-次の1年も地道に積み重ねていきたいなと思います。</p>
-
-<p>これからもどんどんやりたいことやってくぞー。</p>
-
-<p>今年こそなにか資格を取るぞー。</p>
-
-<p>&hellip;</p>
-
-<p>[壁]ω･*)つ<a href="https://www.amazon.co.jp/gp/registry/wishlist/3C1MWGD3YMV6V/ref=cm_wl_huc_view">干芋</a></p>
-
-<p>[壁]|彡ｻｯ</p>
+<p>まぁあまり深くとりあえず考えずにゆるくやってみよー。</p>
   </section>
   <footer>
     
@@ -129,12 +92,11 @@
       <div class="c-pagination__ctrl">
         <div class="c-pagination__newer">
           
-          <a href="https://yutarot.me/posts/20180801/">Newer</a>
+          <a href="https://yutarot.me/about/">Newer</a>
           
         </div>
         <div class="c-pagination__older">
           
-          <a href="https://yutarot.me/about/">Older</a>
           
         </div>
       </div>
