@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>日々雑感</title>
-    <link>https://yutarot.github.io/hibizakkan/</link>
+    <link>/hibizakkan/</link>
     <description>Recent content on 日々雑感</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja_JP.UTF-8</language>
     <copyright>&amp;copy; 2018 yutarot</copyright>
     <lastBuildDate>Tue, 07 Aug 2018 02:00:12 +0900</lastBuildDate>
     
-	<atom:link href="https://yutarot.github.io/hibizakkan/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/hibizakkan/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>雑感20180807</title>
-      <link>https://yutarot.github.io/hibizakkan/posts/20180807/</link>
+      <link>/hibizakkan/posts/20180807/</link>
       <pubDate>Tue, 07 Aug 2018 02:00:12 +0900</pubDate>
       
-      <guid>https://yutarot.github.io/hibizakkan/posts/20180807/</guid>
+      <guid>/hibizakkan/posts/20180807/</guid>
       <description>&lt;h1 id=&#34;windows-subsystem-for-linuxでエンジニアは幸せになれるか&#34;&gt;Windows Subsystem for Linuxでエンジニアは幸せになれるか？&lt;/h1&gt;
 
 &lt;p&gt;職場では長らくWindows7を使い続けていたのだが, 本日(正確にはもう昨日. ねむい)ひょんなことからWindows10のマシンが手元に舞い込んできまして, ちまちま移行を進めています.&lt;/p&gt;
@@ -27,10 +27,10 @@
     
     <item>
       <title>雑感20180801</title>
-      <link>https://yutarot.github.io/hibizakkan/posts/20180801/</link>
+      <link>/hibizakkan/posts/20180801/</link>
       <pubDate>Wed, 01 Aug 2018 01:43:04 +0900</pubDate>
       
-      <guid>https://yutarot.github.io/hibizakkan/posts/20180801/</guid>
+      <guid>/hibizakkan/posts/20180801/</guid>
       <description>&lt;h2 id=&#34;喫緊の課題&#34;&gt;喫緊の課題&lt;/h2&gt;
 
 &lt;p&gt;お仕事の都合で目下、以下のテクノロジーの習得が必要となっている.&lt;/p&gt;
@@ -40,10 +40,10 @@
     
     <item>
       <title>雑感20180727</title>
-      <link>https://yutarot.github.io/hibizakkan/posts/20180727/</link>
+      <link>/hibizakkan/posts/20180727/</link>
       <pubDate>Sat, 28 Jul 2018 03:22:57 +0900</pubDate>
       
-      <guid>https://yutarot.github.io/hibizakkan/posts/20180727/</guid>
+      <guid>/hibizakkan/posts/20180727/</guid>
       <description>&lt;h1 id=&#34;マストドンのバージョンを更新&#34;&gt;マストドンのバージョンを更新&lt;/h1&gt;
 
 &lt;p&gt;自分専用おひとり鯖の&lt;a href=&#34;https://mstdn.binfish.jp&#34;&gt;マストドン&lt;/a&gt;のバージョンを2.4.3に更新した。&lt;/p&gt;
@@ -53,19 +53,19 @@
     
     <item>
       <title>About</title>
-      <link>https://yutarot.github.io/hibizakkan/about/</link>
+      <link>/hibizakkan/about/</link>
       <pubDate>Wed, 25 Jul 2018 00:58:45 +0900</pubDate>
       
-      <guid>https://yutarot.github.io/hibizakkan/about/</guid>
+      <guid>/hibizakkan/about/</guid>
       <description> 私はこんな人:  Webエンジニア Java 勉強中: JavaScript, TypeScript, React, Python びーるが好き キャンプが好き ねこを2匹飼っている シンプルイズベスト なるようになる  </description>
     </item>
     
     <item>
       <title>Hello Hugo!</title>
-      <link>https://yutarot.github.io/hibizakkan/posts/hello/</link>
+      <link>/hibizakkan/posts/hello/</link>
       <pubDate>Sun, 22 Jul 2018 23:28:11 +0900</pubDate>
       
-      <guid>https://yutarot.github.io/hibizakkan/posts/hello/</guid>
+      <guid>/hibizakkan/posts/hello/</guid>
       <description>&lt;h2 id=&#34;hugo触ってみるの巻&#34;&gt;Hugo触ってみるの巻.&lt;/h2&gt;
 
 &lt;p&gt;すでに&lt;a href=&#34;https://blog.binfish.jp&#34;&gt;WordPressのブログ&lt;/a&gt;があるけど、静的サイトジェネレータってやつもやってみたくなって、これ。&lt;/p&gt;
