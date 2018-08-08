@@ -1,4 +1,4 @@
-baseurl = "https://yutarot.me/hibizakkan/"
+baseurl = "https://yutarot.me/"
 languageCode = "ja_JP.UTF-8"
 title = "日々雑感"
 theme = "pickles"
