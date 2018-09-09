@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja_JP.UTF-8</language>
     <copyright>&amp;copy; 2018 yutarot</copyright>
-    <lastBuildDate>Wed, 08 Aug 2018 23:26:08 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 10 Sep 2018 01:16:09 +0900</lastBuildDate>
     
 	<atom:link href="https://yutarot.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>雑感20180910</title>
+      <link>https://yutarot.me/posts/2018/0910/</link>
+      <pubDate>Mon, 10 Sep 2018 01:16:09 +0900</pubDate>
+      
+      <guid>https://yutarot.me/posts/2018/0910/</guid>
+      <description>&lt;p&gt;Amazon Echoを使い始めてから大体6ヶ月が経った。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>雑感20180808</title>
