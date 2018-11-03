@@ -6,13 +6,57 @@ date: 2018-07-25T00:58:45+09:00
 # 私について
 
 * Webエンジニア
-* Java, JavaScript, CSS/SCSS
-* 勉強中: TypeScript, React, Python
-* びーるが好き
-* キャンプが好き
-* 温泉が好き
+    * プログラミング
+        * Java, JavaScript, CSS/SCSS, HTML, XSL
+        * 勉強中: React, TypeScript, Vue.js, Python, Ruby, Golang
+    * フレームワーク
+        * Struts, Spring
+        * 勉強中: Play, Django, Ruby on Rails
+    * OS
+        * Windows, Mac, CentOS
+        * 勉強中: Ubuntu
+    * ミドルウェア
+        * Apache, Tomcat, Nginx
+    * DB
+        * MySQL
+        * 勉強中: PostgreSQL
+    * KVS
+        * Memcached
+        * 勉強中: Redis, Guava
+    * ユニットテスト
+        * JUnit
+    * VCS
+        * Git, SVN, CVS
+    * ビルドツール
+        * Maven, Ant, Gradle
+        * 勉強中: sbt
+    * IDE
+        * Eclipse, VS Code
+        * 勉強中: IntelliJ
+    * クラウド/VPS
+        * Conoha
+        * 勉強中: AWS, GCP
+    * 仮想化
+        * 勉強中: Docker
+    * その他(触ったことあるってレベル)
+        * GitHub, BitBucket, SourceTree, Redmine, Confluence, JIRA, VirtualBox, Jenkins, Bamboo, Ansible, Letsencrypt, お名前ドットコム, スタードメイン, etc
+    * その他(どうでもいいやつ)
+        * Vim派
+* 資格等
+    * 基本情報技術者(FE)
+    * TOEIC 720点
+* loves
+    * びーる🍺
+    * キャンプ⛺
+    * 温泉♨
+    * テニス🎾
+    * 野球⚾
+    * ピアノ🎹
 * ねこを2匹飼っている
-* [keybase](https://keybase.io/yutarot)
+    * <a target="_blank" href="https://mstdn.binfish.jp/tags/%E3%82%8A%E3%82%93">りん😺</a>
+    * <a target="_blank" href="https://mstdn.binfish.jp/tags/%E3%81%8F%E3%82%8B%E3%81%BF">くるみ😺</a>
+* more
+    * <a target="_blank" href="https://keybase.io/yutarot">keybase</a>
 
 <br>
 
