@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   
-  <title>雑感20181024</title>
-  <meta property="og:title" content="雑感20181024" />
-  <meta name="twitter:title" content="雑感20181024" />
+  <title>雑感20181108</title>
+  <meta property="og:title" content="雑感20181108" />
+  <meta name="twitter:title" content="雑感20181108" />
   
 
   
@@ -17,7 +17,7 @@
 
   <meta name="author" content="yutarot"/>
   <meta property="og:site_name" content="日々雑感" />
-  <meta property="og:url" content="https://yutarot.me/posts/2018/1024/" />
+  <meta property="og:url" content="https://yutarot.me/posts/2018/1108/" />
 
   
   <meta name="twitter:card" content="summary" />
@@ -54,12 +54,12 @@
 
 <article class="p-article">
   <header>
-    <h1>雑感20181024</h1>
+    <h1>雑感20181108</h1>
     <div>
       <div class="c-time">
         Posted on
-        <time datetime="2018-10-24T22:49:52&#43;09:00">
-          Oct 24, 2018
+        <time datetime="2018-11-08T20:41:16&#43;09:00">
+          Nov 8, 2018
         </time>
       </div>
       
@@ -67,46 +67,161 @@
   </header>
   
   <section id="js-article" class="p-article__body">
-    <h1 id="マニフェストのようなもの">マニフェストのようなもの</h1>
+    <h2 id="backends-for-frontends読んだ">Backends For Frontends読んだ</h2>
 
 <p></p>
 
-<p>今更だし、当たり前すぎてわざわざ書き出すほどのことでもないのかもしれないが、念のために書いておく。</p>
-
-<p>このブログに関する私の考えについて、だ。</p>
-
-<p>あえてこれをここに記すモチベーションは、主に自分自身に対する戒め、という向きが強い。</p>
+<p>というわけで、技術書典５で購入した<a target="_blank" href="https://twitter.com/NaoshiHoshi">星直史氏</a>著の&rdquo;<a target="_blank" href="https://www.amazon.co.jp/BFF-BackendsForFrontends-%E6%98%9F-%E7%9B%B4%E5%8F%B2-ebook/dp/B07J2W6374">Backends For Frontends</a>&ldquo;を読んだので、所感など。</p>
 
 <p><br></p>
 
-<p>* * *</p>
+<p><img src="/images/2018/1108_1.jpg" alt="Backends For Frontends" /></p>
+
+<p>(シンプルな装丁が潔くて美しい！)</p>
 
 <p><br></p>
 
-<p>まずはじめに、<a target="_blank" href="/about">About</a>にもある通り、このブログは <em>&ldquo;私yutarotが日々の雑感(ポエム)を適当に書き散らかす場&rdquo;</em> である。
-つまり、このブログは私の娯楽のため&rdquo;だけ&rdquo;に存在している。</p>
+<h3 id="みなさんbffしてますか">みなさんBFFしてますか？</h3>
 
-<p>また、同じく<a target="_blank" href="/about">About</a>にもある通り、 <em>&ldquo;このブログ上の情報に関しては、合法性、正確性、安全性等、いかなる保証もされません&rdquo;</em> し、 <em>&ldquo;本ブログ上の情報を利用した結果生じた損害について、一切責任を負いません&rdquo;</em> 。</p>
+<p>BFFというのは本著のタイトルにもなっている&rdquo;Backends For Frontends&rdquo;(またはBackend For Frontend, BFF, バックエンドフォーフロントエンド)のことで、文字通りフロントエンドのためのバックエンドを指す言葉です。</p>
 
-<p>これらは自衛のために記載していることだが、それが法的な効力をもつかどうかについては未検証であり、現時点ではこれすらいわば&rdquo;ポエム&rdquo;である。
-真面目にその効力を期待する場合、私はそれについて真剣に検討しなければならないが、現時点でその予定はない。</p>
+<p><strong>ズッ友のことじゃありません。</strong><br>
+※ズッ友/Best Friend Forever/ベストフレンドフォーエバー</p>
 
-<p>さて、そんな無責任な本ブログであるが、上記の通りであるからといってなんでもかんでも書いて良い、ということはなく、私はここに書くことについて一定のルールを持っており、なにか書こうと思った場合には実際に書き始める前にそれについて検討するようにしている。</p>
+<p>具体的にはどういうことか？本著の冒頭より引用します。</p>
 
-<p>それは、具体的には以下のようなものだ。</p>
+<p><br></p>
+
+<blockquote>
+<p>&ldquo;<em>BackendsForFrontends(以下 BFF)とは、その名前の通り、フロントエンドのためのバックエンドサーバーです。</em></p>
+
+<p><em>(中略)</em></p>
+
+<p><em>このように、BFFはクライアントとバックエンドサーバー(API群)の中間に位置するサーバーです。</em></p>
+
+<p><em>(中略)</em></p>
+
+<p><em>BFFは、APIサーバーの処理結果を元に、UIの構築を補助したり、UXの向上を目的にしています。</em>&ldquo;</p>
+</blockquote>
+
+<p><br></p>
+
+<p>実は私がBFF/バックエンドフォーフロントエンドという言葉を知るようになったのはつい最近のことなのですが、この言葉自体は2015年から存在していたようです。</p>
+
+<p>調べた限りだと、オライリーで<a target="_blank" href="https://www.amazon.co.jp/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3-Sam-Newman/dp/4873117607">マイクロサービスアーキテクチャ</a>という本を出している、サム・ニューマン氏が<a target="_blank" href="https://samnewman.io/patterns/architectural/bff/">自身のブログにて紹介</a>したのが初めとされているようです。</p>
+
+<p>さてこのBFF、具体的にはいったいどんなものを指すのでしょうか。</p>
+
+<p>本記事では著書の前半で記載されている、&rdquo;Webアプリケーションの変遷&rdquo;を辿りながら、BFFとはなんであるか、見ていきたいと思います。<br></p>
+
+<p>*以下、著書の内容とわたしの理解をあわせながら記述していきます<br>
+**図は著書内のものを参考にわたしがお絵かきしました。一部内容を簡略化したりしています</p>
+
+<p><br></p>
+
+<h3 id="webアプリケーションの変遷">Webアプリケーションの変遷</h3>
+
+<h4 id="1-モノリシックwebアプリケーション">1. モノリシックWebアプリケーション</h4>
+
+<p><img src="/images/2018/1108_2_monolithic.jpg" alt="Backends For Frontends" /></p>
+
+<p>モノリシックWebアプリケーションとは、HTMLの配信を主たる目的として構成された、最も原始的なWebアプリケーションです。</p>
+
+<p>最初のWebは静的なHTMLを配信しており、徐々に見た目を記述するためのCSS、ブラウザ上で動的なアクションを提供するJavaScriptなどが加わっていき、DBとそれを参照/更新するアプリケーションが追加されて動的にHTMLを生成・配信することができるようになっていきました。</p>
+
+<p>著書でも紹介されている通り、この時代のアプリケーションはモノリシックなサーバで構築されていることが多く、DBの参照からHTMLの生成・配信までひとつのサーバ上で行っていました。</p>
+
+<p><br></p>
+
+<h4 id="2-apiサーバー">2. APIサーバー</h4>
+
+<p><img src="/images/2018/1108_3_spappjson.jpg" alt="Backends For Frontends" /></p>
+
+<p>2000年代になるとJavaScriptからサーバに対して非同期にHTTPリクエストを投げるAjax通信などが盛んに行われるようになり、徐々にWebアプリケーションがリッチになっていきました。</p>
+
+<p>また、2000年代後半になるとスマートフォンが急速に普及していき、ブラウザ向けにHTMLを生成配信する処理とネイティブアプリ向けにJSONを生成する処理をバックエンドで行わなければならず、開発者にとって負担になってきました。</p>
+
+<p><img src="/images/2018/1108_4_spajson.jpg" alt="Backends For Frontends" /></p>
+
+<p>このような問題を解決するために、バックエンドとフロントエンドを分離して管理する動きが活発になってきました。</p>
+
+<p>具体的にはSPA(Single Page Application/シングルページアプリケーション)により、バックエンド(モノリシックなWebアプリケーション)からフロントエンドを分離させ、バックエンドをAPI化する動きです。</p>
+
+<p><br></p>
+
+<h4 id="3-マイクロサービス">3. マイクロサービス</h4>
+
+<p><img src="/images/2018/1108_5_microservice.jpg" alt="Backends For Frontends" /></p>
+
+<p>フロントエンドが分離されたので、もはやバックエンドが巨大なAPIの塊である必要がなくなりました。</p>
+
+<p>これにより、巨大なAPIの塊を機能や振る舞い等の目的に適した複数のAPIに分割していくマイクロサービスアーキテクチャを採用するシステムも多くなっていきました。</p>
+
+<p>著書ではこれにより得られる効果として以下が挙げられています。</p>
 
 <ul>
-<li>私は<a target="_blank" href="/"><a href="https://yutarot.me">https://yutarot.me</a></a>(以下、本ブログ)において、&rdquo;それはチラシの裏にでも書けば良い&rdquo;というような、いわば&rdquo;クソどうでもいい&rdquo;ことを書き著すことを是とする</li>
-<li>ただし、本ブログに書く内容は私が&rdquo;書きたい&rdquo;と思うことである必要がある。私は書きたいと思わないことを本ブログに書かない</li>
-<li>私は&rdquo;それはチラシの裏にしか書いてはいけない&rdquo;、または&rdquo;チラシの裏にすら書くべきでない&rdquo;ことについて、本ブログに書いてはいけない</li>
-<li><a target="_blank" href="/about">About</a>に示している通り、本ブログに掲載している内容にはなんらの保証も伴わないが、かといって意図的に虚偽の情報を記載することをしてはいけない</li>
-<li>本ブログにおいて情報の誤りが確認された場合、誤りを認めて訂正する</li>
-<li>これらの条件を満たす限りにおいて、私は本ブログで自由に主義・思想の主張、その他の表現を行うことができる</li>
+<li>プログラム修正の影響範囲が限定的になる</li>
+<li>自動テスト、ビルド、デプロイといったリリースまでのワークフロー時間が短縮される</li>
+<li>マイクロサービス化により各サービスが独立したことで、言語やフレームワークなどの選定が柔軟に行えるようになった</li>
+<li>システムの柔軟性が増しただけでなく、サービスや組織のスケールが可能になった</li>
 </ul>
 
-<p>以上である。</p>
+<p><br></p>
 
-<p>これらのルールはこの記事を書いている時点(2018/10/24 23:45現在)で私が私に課している最新のものであるが、将来このルールの内容に追加・更新・削除といった変更を行う可能性があることを付け足しておく。</p>
+<h4 id="bffの台頭">BFFの台頭</h4>
+
+<p><img src="/images/2018/1108_6_bff.jpg" alt="Backends For Frontends" /></p>
+
+<p>APIやそれを呼ぶクライアントが多岐にわたるようになることで、以下のような問題が発生してきました。</p>
+
+<ul>
+<li>画面サイズやデバイスによって要求する内容(データ)が変わるケースが出てきた</li>
+<li>HTTP/1.1における同時接続数の制限がボトルネックになってきた</li>
+</ul>
+
+<p>こういった種々の問題を解決するために、クライアントとバックエンドAPIの間にバックエンドの結果をフロントで扱いやすくするためのサーバを置いて開発されるようになっていきました。</p>
+
+<p><br></p>
+
+<p><strong>このアーキテクチャがBFFです。</strong></p>
+
+<p><br></p>
+
+<ul>
+<li>これによってフロントエンドからバックエンドへのHTTPリクエストは1本で済むようになった</li>
+<li>フロントエンドはバックエンドAPIからの結果を処理しなくて済むようになった</li>
+</ul>
+
+<p><br></p>
+
+<h3 id="まとめ的な">まとめ的な</h3>
+
+<p>本記事ではBackends For Frontendという書籍にて紹介されている、BFFに至るまでのWebの変遷を辿りました。</p>
+
+<p>なお、著書の本編ではこのあと以下の5つのユースケースを題材に、具体的なBFFの実装パターンが紹介されています。</p>
+
+<p><br></p>
+
+<ul>
+<li>API Gateway</li>
+<li>Server Side Rendering (SSR)</li>
+<li>セッション管理</li>
+<li>ファイルアップロード</li>
+<li>WebSocket</li>
+</ul>
+
+<p><br></p>
+
+<p>個人的にはまさにいま仕事で取り組んでいる内容にばっちりフィットする内容だったので(そういう本を中心に探していたというのはある)、とてもタメになりました。</p>
+
+<p>同人誌らしく薄い本なんですが、薄い中でも要点が簡潔にまとめられており、時間をかけずに内容をさらえたのもよかったです。</p>
+
+<p>冒頭にもリンクを貼りましたが、<a target="_blank" href="https://www.amazon.co.jp/BFF-BackendsForFrontends-%E6%98%9F-%E7%9B%B4%E5%8F%B2-ebook/dp/B07J2W6374">AmazonにてKindle版を1000円頒布されている</a>ようですので、気になった方はぜひお手にとってご覧になってみてはいかがでしょうか。<br>
+(Kindle Unlimitedに登録しているアナタは0円で読むことができます！ﾗｯｷｨ！)</p>
+
+<p><br></p>
+
+<p>ではでは、今日はこの辺で。</p>
   </section>
   <footer>
     
@@ -114,12 +229,11 @@
       <div class="c-pagination__ctrl">
         <div class="c-pagination__newer">
           
-          <a href="https://yutarot.me/posts/2018/1031/">Newer</a>
           
         </div>
         <div class="c-pagination__older">
           
-          <a href="https://yutarot.me/posts/2018/1008/">Older</a>
+          <a href="https://yutarot.me/posts/2018/1107/">Older</a>
           
         </div>
       </div>

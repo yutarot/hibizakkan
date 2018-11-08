@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja_JP.UTF-8</language>
     <copyright>&amp;copy; 2018 yutarot</copyright>
-    <lastBuildDate>Wed, 07 Nov 2018 05:43:30 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 08 Nov 2018 20:41:16 +0900</lastBuildDate>
     
 	<atom:link href="https://yutarot.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>雑感20181108</title>
+      <link>https://yutarot.me/posts/2018/1108/</link>
+      <pubDate>Thu, 08 Nov 2018 20:41:16 +0900</pubDate>
+      
+      <guid>https://yutarot.me/posts/2018/1108/</guid>
+      <description>&lt;h2 id=&#34;backends-for-frontends読んだ&#34;&gt;Backends For Frontends読んだ&lt;/h2&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>雑感20181107</title>
@@ -128,7 +139,7 @@
       <pubDate>Wed, 25 Jul 2018 00:58:45 +0900</pubDate>
       
       <guid>https://yutarot.me/about/</guid>
-      <description>私について  Webエンジニア  プログラミング  Java, JavaScript, CSS/SCSS, HTML, XSL 勉強中: React, TypeScript, Vue.js, Python, Ruby, Golang  フレームワーク  Struts, Spring 勉強中: Play, Django, Ruby on Rails  OS  Windows, Mac, CentOS 勉強中: Ubuntu  ミドルウェア  Apache, Tomcat, Nginx  DB  MySQL 勉強中: PostgreSQL  KVS  Memcached 勉強中: Redis, Guava  ユニットテスト  JUnit  VCS  Git, SVN, CVS  ビルドツール  Maven, Ant, Gradle 勉強中: sbt  IDE  Eclipse, VS Code 勉強中: IntelliJ  クラウド/VPS  Conoha 勉強中: AWS, GCP  仮想化  勉強中: Docker  その他(触ったことあるってレベル)  GitHub, BitBucket, SourceTree, Redmine, Confluence, JIRA, VirtualBox, Jenkins, Bamboo, Ansible, Letsencrypt, お名前ドットコム, スタードメイン, etc  その他(どうでもいいやつ)  Vim派   資格等  基本情報技術者(FE) TOEIC 720点  loves  びーる🍺 キャンプ⛺ 温泉♨ テニス🎾 野球⚾ ピアノ🎹  ねこを2匹飼っている  りん😺 くるみ😺  more  keybase</description>
+      <description>私について  Webエンジニア  プログラミング  Java, JavaScript, CSS/SCSS, HTML, XSL 勉強中: React, TypeScript, Vue.js, Python, Ruby, Golang  フレームワーク  Struts, Spring 勉強中: Play, Django, Ruby on Rails  OS  Windows, Mac, CentOS 勉強中: Ubuntu  ミドルウェア  Apache, Tomcat, Nginx  DB  MySQL 勉強中: PostgreSQL  KVS  Memcached 勉強中: Redis, Guava  ユニットテスト  JUnit  VCS  Git, SVN, CVS  ビルドツール  Maven, Ant, Gradle 勉強中: sbt  IDE  Eclipse, VS Code 勉強中: IntelliJ  クラウド/VPS  Conoha 勉強中: AWS, GCP  仮想化  勉強中: Docker  その他(触ったことあるってレベル)  GitHub, BitBucket, SourceTree, Redmine, Confluence, JIRA, VirtualBox, Jenkins, Bamboo, Ansible, Letsencrypt, お名前ドットコム, スタードメイン, etc  その他(どうでもいいやつ)  Vim派 機械学習に興味がある   資格等  基本情報技術者(FE) 2012年取得 TOEIC 720点 2017年7月  loves  びーる🍺 キャンプ⛺ 温泉♨ テニス🎾 野球⚾ ピアノ🎹  ねこを2匹飼っている  りん😺 くるみ😺  信条  なるようになる シンプルイズベスト  more  keybase</description>
     </item>
     
     <item>
