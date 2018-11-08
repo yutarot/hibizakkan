@@ -14,7 +14,7 @@ enableGitInfo = true
 #  facebook = "Your Facebook username"
 #  instagram = "yutar0takei"
 #  googleplus = "Your Google+ account URL" # https://plus.google.com/u/0/xxxxxx
-  github = "yutarot"
+  github = "yutarot/hibizakkan"
 #  gitlab = "Your GitLab username"
 #  npm = "Your npm username"
 #  codepen = "yutarot"
@@ -45,11 +45,6 @@ enableGitInfo = true
     name = "About"
     url = "/about"
     weight = 1
-
-[[menu.main]]
-    name = "Blog"
-    url = "https://blog.binfish.jp"
-    weight = 2
 
 [[menu.main]]
     name = "Tags"
