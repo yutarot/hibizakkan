@@ -8,41 +8,32 @@ date: 2018-07-25T00:58:45+09:00
 * Webエンジニア
     * プログラミング
         * Java, JavaScript, CSS/SCSS, HTML, XSL
-        * 勉強中: React, TypeScript, Vue.js, Python, Ruby, Golang
     * フレームワーク
-        * Struts, Spring
-        * 勉強中: Play, Django, Ruby on Rails
+        * Play Framework, Struts, Spring
     * OS
-        * Windows, Mac, CentOS
-        * 勉強中: Ubuntu
+        * Windows, Mac, CentOS, Ubuntu
     * ミドルウェア
         * Apache, Tomcat, Nginx
     * DB
         * MySQL
-        * 勉強中: PostgreSQL
     * KVS
-        * Memcached
-        * 勉強中: Redis, Guava
+        * Memcached, Redis
     * ユニットテスト
         * JUnit
     * VCS
         * Git, SVN, CVS
     * ビルドツール
-        * Maven, Ant, Gradle
-        * 勉強中: sbt
+        * Maven, Ant, Gradle, sbt
     * IDE
-        * Eclipse, VS Code
-        * 勉強中: IntelliJ
+        * Eclipse, VS Code, IntelliJ
     * クラウド/VPS
-        * Conoha
-        * 勉強中: AWS, GCP
+        * Conoha, AWS
     * 仮想化
-        * 勉強中: Docker
+        * Docker
     * その他(触ったことあるってレベル)
         * GitHub, BitBucket, SourceTree, Redmine, Confluence, JIRA, VirtualBox, Jenkins, Bamboo, Ansible, Letsencrypt, お名前ドットコム, スタードメイン, etc
     * その他(どうでもいいやつ)
         * Vim派
-        * 機械学習に興味がある
 * 資格等
     * 基本情報技術者(FE) 2012年取得
     * TOEIC 720点 2017年7月
