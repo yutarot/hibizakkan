@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://yutarot.me/posts/2019/0106/</loc>
+    <lastmod>2019-01-06T20:17:17+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://yutarot.me/posts/2018/1108/</loc>
     <lastmod>2018-11-09T01:39:17+09:00</lastmod>
   </url>
@@ -74,7 +79,7 @@
   
   <url>
     <loc>https://yutarot.me/posts/</loc>
-    <lastmod>2018-11-09T01:39:17+09:00</lastmod>
+    <lastmod>2019-01-06T20:17:17+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -85,7 +90,7 @@
   
   <url>
     <loc>https://yutarot.me/</loc>
-    <lastmod>2018-11-09T01:39:17+09:00</lastmod>
+    <lastmod>2019-01-06T20:17:17+09:00</lastmod>
     <priority>0</priority>
   </url>
   
