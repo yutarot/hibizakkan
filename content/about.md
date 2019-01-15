@@ -11,7 +11,7 @@ date: 2018-07-25T00:58:45+09:00
     * フレームワーク
         * Play Framework, Struts, Spring
     * OS
-        * Windows, Mac, CentOS, Ubuntu
+        * Mac, Windows, CentOS, Ubuntu
     * ミドルウェア
         * Apache, Tomcat, Nginx
     * DB
@@ -37,13 +37,11 @@ date: 2018-07-25T00:58:45+09:00
 * 資格等
     * 基本情報技術者(FE) 2012年取得
     * TOEIC 720点 2017年7月
+    * [Oracle Certified Java Programmer, Silver SE 8 (Oracle Certified Associate, Java SE 8 Programmer) - JPN](https://www.youracclaim.com/badges/f6144432-241f-4d44-87cf-232291ad4968/public_url)
 * loves
     * びーる🍺
     * キャンプ⛺
     * 温泉♨
-    * テニス🎾
-    * 野球⚾
-    * ピアノ🎹
 * ねこを2匹飼っている
     * <a target="_blank" href="https://mstdn.binfish.jp/tags/%E3%82%8A%E3%82%93">りん😺</a>
     * <a target="_blank" href="https://mstdn.binfish.jp/tags/%E3%81%8F%E3%82%8B%E3%81%BF">くるみ😺</a>
