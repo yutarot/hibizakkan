@@ -36,8 +36,8 @@ date: 2018-07-25T00:58:45+09:00
         * Vim派
 * 資格等
     * 基本情報技術者(FE) 2012年取得
-    * TOEIC 720点 2017年7月
-    * [Oracle Certified Java Programmer, Silver SE 8 (Oracle Certified Associate, Java SE 8 Programmer) - JPN](https://www.youracclaim.com/badges/f6144432-241f-4d44-87cf-232291ad4968/public_url)
+    * TOEIC 720点 2017年7月取得
+    * [Oracle Certified Java Programmer, Silver SE 8 (Oracle Certified Associate, Java SE 8 Programmer) - JPN](https://www.youracclaim.com/badges/f6144432-241f-4d44-87cf-232291ad4968/public_url) 2019年1月取得
 * loves
     * びーる🍺
     * キャンプ⛺
