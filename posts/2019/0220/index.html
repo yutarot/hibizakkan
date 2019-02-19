@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   
-  <title>雑感20180910</title>
-  <meta property="og:title" content="雑感20180910" />
-  <meta name="twitter:title" content="雑感20180910" />
+  <title>日々雑感20190220</title>
+  <meta property="og:title" content="日々雑感20190220" />
+  <meta name="twitter:title" content="日々雑感20190220" />
   
 
   
@@ -17,7 +17,7 @@
 
   <meta name="author" content="yutarot"/>
   <meta property="og:site_name" content="日々雑感" />
-  <meta property="og:url" content="https://yutarot.me/posts/2018/0910/" />
+  <meta property="og:url" content="https://yutarot.me/posts/2019/0220/" />
 
   
   <meta name="twitter:card" content="summary" />
@@ -54,12 +54,12 @@
 
 <article class="p-article">
   <header>
-    <h1>雑感20180910</h1>
+    <h1>日々雑感20190220</h1>
     <div>
       <div class="c-time">
         Posted on
-        <time datetime="2018-09-10T01:16:09&#43;09:00">
-          Sep 10, 2018
+        <time datetime="2019-02-20T00:26:46&#43;09:00">
+          Feb 20, 2019
         </time>
       </div>
       
@@ -67,111 +67,54 @@
   </header>
   
   <section id="js-article" class="p-article__body">
-    <h1 id="amazon-echoを使い始めてから大体6ヶ月が経った">Amazon Echoを使い始めてから大体6ヶ月が経った</h1>
+    <p>近況など。</p>
 
-<p>私はいったいどんな用途に使っているのか？使い心地は？等々、適当にポエムる。ねむい。</p>
+<p>お仕事ではWebアプリケーションのフルリニューアル(フロントエンド/バックエンド全体のフレームワーク/アーキテクチャ変更を含む)が続いており、忙しくしております。</p>
 
-<p><a href="//af.moshimo.com/af/c/click?a_id=1111075&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=http://www.amazon.co.jp/dp/B01J4IY8WE" target="_blank" rel="nofollow"><img src="https://images-fe.ssl-images-amazon.com/images/I/51EJ-68kGCL._SL160_.jpg?" style="border: medium none;" alt="" /><br />Echo Plus (エコープラス) - スマートスピーカー with Alexa、ブラック</a><img style="border: 0px none;" alt="" src="//i.moshimo.com/af/i/impression?a_id=1111075&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" height="1" width="1" /></p>
+<p>忙しいといってもここ最近は現場の残業NGな雰囲気も手伝って表向きは(?)クリーンなもんです。</p>
 
-<p><a href="//af.moshimo.com/af/c/click?a_id=1111075&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=http://www.amazon.co.jp/dp/B071LMG8BQ" target="_blank" rel="nofollow"><img src="https://images-fe.ssl-images-amazon.com/images/I/613jCk6EqoL._SL160_.jpg?" style="border: medium none;" alt="" /><br />Echo (エコー) - スマートスピーカー with Alexa、サンドストーン (ファブリック)</a><img style="border: 0px none;" alt="" src="//i.moshimo.com/af/i/impression?a_id=1111075&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" height="1" width="1" /></p>
+<p>個人的にはやるときはガッとやりたいタイプなので、残業できないのはそれはそれでつらいのだけれど。まぁそれならそれでその余剰時間を他に有効活用しましょうということで。</p>
 
-<h2 id="amazon-echoの購入">Amazon Echoの購入</h2>
+<p><br></p>
 
-<p>最初にAmazon Echoを買ったのは2018年1月のこと。</p>
+<p>さてその余剰時間でなにをやっているかというと、半分仕事、半分趣味でもっぱらDocker/Kubernetesの勉強をしています。</p>
 
-<p>当時招待制だったAmazon Echo、スタンダードモデルのAmazon Echoと高機能版のAmazon Echo Plusの両方に招待依頼をかけていた私が受け取ったのは、スタンダードモデルのAmazon Echoへの招待だった。</p>
+<p>ちょうど社内システムの移行話が持ち上がったこともあり。<br>
+昨今いよいよ避けて通れなくなってきたDockerやKubernetesといったコンテナ仮想化/コンテナオーケストレーション、いつやるの？いまでしょ！(古い)<br>
+というわけで検証をやってみているわけです。</p>
 
-<p>すでに国内外で話題になっていたこともあり、通知を受け取ったその日にチャコール(ファブリック)のモデルを購入。11,980円。</p>
+<p>で、やってみるとこれがなかなか奥が深い。</p>
 
-<p>でもって最初になにをやっていたかといえば、</p>
+<p>DockerやDocker-Composeといったあたりまではそこまで難しくないけれど、オーケストレーション(Kubernetes)に入ると途端に複雑度が増してくる。</p>
+
+<p>今回扱っているシステムは</p>
 
 <ul>
-<li>音楽を流す (アレクサ、○○をかけて)</li>
-<li>天気を訊く (アレクサ、明日の天気は？)</li>
-<li>日時を訊く (アレクサ、いま何時?)</li>
-<li>その日の出来事を訊く (アレクサ、今日はなんの日？)</li>
-<li>ニュースを流す (アレクサ、ニュースを教えて)</li>
+<li>apache + cgi + DB(mysql)で動く、いわゆるWeb3層システム</li>
+<li>会議室システムや社員間のスケジュール調整システムなど、計10個のサブシステムから構成される</li>
 </ul>
 
-<p>と言った感じ。まだ何ができるかよくわかっていないので、スマホのアレクサ管理アプリを見たりしながら何ができるのかを探っているような感じ。</p>
-
-<p>で、Amazon Echo単体でできることを一通りやり尽くすと、周りで使っている人の話を聞いてスマートホームに興味を持ち出すわけです。</p>
-
-<p>ところが、購入したスタンダードモデルのAmazon Echoではそのままスマートホームガジェットを連携・利用することができず、スマートホームハブが別途必要というではないですか。</p>
-
-<p>いまさら知ったのかって？もちろん知ってたよ、だからPlusの招待申請もしていたのさ、でもPlusの招待申請が通るまで待てなくてスタンダードモデルを買っちゃったのさ。。</p>
-
-<p>で、ハブとかUSB Type-C一発でアダプタが必要とかいったことが大嫌いな私はそこで悶々と過ごしていたのだが、2018年3月ついにAmazon Echo Plusへの招待を受信するのである。↓</p>
-
-<hr />
-
-<p><img src="/images/2018/0910_1.png" alt="Amazon Echoの購入" /></p>
-
-<hr />
-
-<p>渡りに船、早速Amazon Echo Plusとスマート電球のPhilips Hueを購入。Amazon Echo Plusは17,980円、Philips Hueはなんとキャンペーンでタダ！ﾗｯｷｨ！</p>
-
-<p>スタンダードモデルはメルカリにて8500円で売却した。</p>
-
-<p><a href="//af.moshimo.com/af/c/click?a_id=1111075&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062&amp;url=http://www.amazon.co.jp/dp/B01MSITPT1" target="_blank" rel="nofollow"><img src="https://images-fe.ssl-images-amazon.com/images/I/51JIFOj1-JL._SL160_.jpg?" style="border: medium none;" alt="" /><br />Philips Hue(ヒュー) ホワイトグラデーション シングルランプ 口金直径26mm 【Works with Alexa認定製品】</a><img style="border: 0px none;" alt="" src="//i.moshimo.com/af/i/impression?a_id=1111075&amp;p_id=170&amp;pc_id=185&amp;pl_id=4062" height="1" width="1" /></p>
-
-<p>でそこから半年たったいま、なにに使っているかといえば:</p>
+<p>といったもので、いまやっていて感じている難しさは主に、</p>
 
 <ul>
-<li>音楽を流す (アレクサ、○○をかけて)</li>
-<li>照明のオン/オフ(アレクサ、電気をつけて)</li>
-<li>照明の調光(アレクサ、電気を10にして/アレクサ、電気をオフホワイトにして)</li>
-</ul>
-
-<p>ほかにも、ごくたまーに下記を使うこともある:</p>
-
-<ul>
-<li>リラクゼーション系(雨の音/川の音/ひぐらしの鳴き声/蛙の鳴き声)</li>
-<li>天気を訊く</li>
-<li>日時を訊く</li>
-<li>その日の出来事を訊く</li>
-<li>ニュースを流す</li>
-<li>スマート留守電を再生する(要連携)</li>
-<li>Googleカレンダーの予定を訊く(要連携)</li>
-</ul>
-
-<p>結局のところ、日常利用の80%は電気のオンオフで、音楽再生が10%、残りがそれ以外という感じ。</p>
-
-<p>ただ、こういう言い方をすると「なんだイラネーじゃん」と思ってしまうかもしれないけど、個人的にはこれでも結構気に入っている。なにが気に入っているかといえば:</p>
-
-<ul>
-<li>寝るときに声で電気を消せるのはそれだけでも便利。毎日発生する作業の効率化</li>
-<li>音楽再生時の音質も想像よりも良かった(低音もしっかり出つつ、下品でない。高音もシャリシャリしない。バランスがいい)</li>
-<li>雨の音、川の音、ひぐらしの鳴き声、蛙の鳴き声はリラックスしたいときや集中したいときなどスポットで使うといい気分転換になる</li>
-<li>スマートホームガジェットやスマートニュース再生、Googleカレンダー確認など、アイアンマンに登場するジャービスのようなAIアシスタントの未来感を体験できる</li>
+<li>ローカル開発環境のためのdocker/docker-compose、ステージング環境/本番環境のためのKubernetesで扱うツールや構成単位が変わり、それらの整合性を取らないといけない(一貫した設計方針でないとそれを扱う人たちが理解できない=だれも使わない。またローカルと本番で同じコンテナが動かなければコンテナを使う意味がない)</li>
+<li>docker, docker-compose, kubernetesで似たような用語が交差して混乱する</li>
+<li>いきなりdocker-compose、いきなりkubernetesから手を付けようとして混乱死する。(docker-&gt;docker-compose-&gt;kubernetsとちゃんと定石を踏みながら学び進めるのが吉。これに限った話ではないがやってしまいがち)</li>
+<li>docker, Kubernetesは特にそうだと感じるが、今まさに盛り上がっている(成熟している)時期で、開発速度が早く、ツールや構成ファイルのバージョンに気をつけないといけない。特にWeb記事など参考にする機会が多いがどのバージョンを対象にしているか気をつけないと混乱する</li>
+<li>Kubernetesの難しさは、主に勉強のために手元で動かす環境の構築が面倒で実際に動かしながら勉強するところまでいくのが一苦労だったり、クラウド(GCP/Azure/AWS)のマネージドサービスとの連携の部分のごにょごにょ(IAMなどの権限管理、CLIコマンドなど)によるところが大きいと思う。特にいまAWSで構築を検討しているけどAWSは一番面倒&amp;&amp;値段も高い?気がする。GCP使いたい…</li>
+<li>KubernetesそのものはPod/ReplicaSet/Deploymentなどの似たような概念やそれらを&rdquo;リソース&rdquo;として抽象化して扱うところが少しコツがいるけれど、そこまで難しくない。やはり上記の通り面倒な環境構築やクラウドあれこれがKubernetesを複雑に見せている気がする</li>
+<li>あと純粋にシステムの運用設計はDockerやKubernetsに限らず難しいというところはあるかと思う。自分は特にアプリケーションエンジニアなのでインフラ周りの勘が鈍い。ネットワーク難しい</li>
 </ul>
 
 <p>といったところ。</p>
 
-<p>逆に物足りない・使えないと感じるところは:</p>
-
-<ul>
-<li>日本ではまだSpotifyに連携できない</li>
-<li>通話やメッセージ送信 (Line等含む)</li>
-</ul>
-
-<p>あれ？考えてみたけどいまはこのくらいしか不満はないようだ。</p>
-
-<p>といってもまだまだ使い込みが足りなくてもっとこうできたらいいのにというところまで考えが至っていないということだろう。</p>
-
-<p>今後こう使っていきたいな、というところは:</p>
-
-<ul>
-<li>スマートリモコンの利用</li>
-<li>もっと便利なアプリを開拓</li>
-<li>あわよくばアレクサアプリを開発</li>
-</ul>
-
-<p>というところ。</p>
+<p>3月には社内で勉強会をやる予定なので、そこに向けた資料は(見せられる範囲で)ブログ等でも公開できればと思っている。</p>
 
 <p><br></p>
 
-<p>みなさんはどんなふうにAmazon Echo使ってますか？</p>
+<p>まとめると今日も私は元気です。</p>
+
+<p>ではでは。</p>
   </section>
   <footer>
     
@@ -179,12 +122,11 @@
       <div class="c-pagination__ctrl">
         <div class="c-pagination__newer">
           
-          <a href="https://yutarot.me/posts/2018/0915/">Newer</a>
           
         </div>
         <div class="c-pagination__older">
           
-          <a href="https://yutarot.me/posts/2018/0808/">Older</a>
+          <a href="https://yutarot.me/posts/2019/0106/">Older</a>
           
         </div>
       </div>
