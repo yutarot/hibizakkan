@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja_JP.UTF-8</language>
     <copyright>&amp;copy; 2018 yutarot</copyright>
-    <lastBuildDate>Wed, 20 Feb 2019 00:26:46 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 10 May 2019 21:23:34 +0900</lastBuildDate>
     
 	<atom:link href="https://yutarot.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>雑感20190510</title>
+      <link>https://yutarot.me/posts/2019/0510/</link>
+      <pubDate>Fri, 10 May 2019 21:23:34 +0900</pubDate>
+      
+      <guid>https://yutarot.me/posts/2019/0510/</guid>
+      <description>&lt;p&gt;近況報告。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>雑感20190220</title>
